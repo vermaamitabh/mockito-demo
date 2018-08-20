@@ -29,7 +29,8 @@ public class SomeBusinessMockAnnotationsTest {
 		assertEquals(24, businessImpl.findGreatestFromAllData());
 	}
 	
-public void testfindGreatestFromAllData_ForOneValue() {
+	@Test
+	public void testfindGreatestFromAllData_ForOneValue() {
 		
 		//when retrieveAllData method is called on it, we will return following
 		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] {15});
