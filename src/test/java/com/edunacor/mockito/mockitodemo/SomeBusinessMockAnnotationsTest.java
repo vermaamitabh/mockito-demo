@@ -35,7 +35,7 @@ public class SomeBusinessMockAnnotationsTest {
 		//when retrieveAllData method is called on it, we will return following
 		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] {15});
 		
-		assertEquals(24, businessImpl.findGreatestFromAllData());
+		assertEquals(15, businessImpl.findGreatestFromAllData());
 	}
 }
 
